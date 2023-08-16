@@ -1,0 +1,93 @@
+body {
+  font-family: "Roboto Mono";
+  text-align: center;
+}
+
+h2,
+h3 {
+  color: #00a2c6;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #00a2c6;
+}
+
+nav a{
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.profile header {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 20px
+}
+
+article{
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+article img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+article p{
+  width: 100%;
+  margin: 20px auto;
+  text-align: justify;
+}
+
+section{
+  text-align: center;
+}
+
+section img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+section p {
+  padding-top: 20px;
+  min-height: 100px;
+  max-height: 150px;
+  overflow: scroll;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.lambang{
+  box-shadow: 5px 5px 5px 6px #00a2c6; 
+  padding: 20px 0px; 
+  border-radius: 20px;
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+.info-lambang {
+  text-align: center;
+  font-size: 1.2em;
+}
+.info-lambang table {
+  margin: auto;
+  text-align: left;
+}
+.info-lambang table th {
+  padding-right: 2em;
+}
+
+footer{
+  text-align: center;
+}
