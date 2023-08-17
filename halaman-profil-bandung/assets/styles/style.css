@@ -2,15 +2,6 @@
   box-sizing: border-box;
 }
 
-header{
-  font-size: 20px;
-}
-
-main{
-  padding: 20px;
-  overflow: auto;
-}
-
 body {
   font-family: "Roboto Mono";
   text-align: center;
@@ -18,15 +9,17 @@ body {
   padding: 0;
 }
 
-article{
-  flex: 1;
-  float: left;
-  max-width: 75%;
-  margin-right: 20px;
+header{
+  font-size: 20px;
+  display: inline;
+}
+
+main{
+  padding: 20px;
+  overflow: auto;
 }
 
 aside {
-  flex: 0;
   float: right;
   width: 25%;
 }
@@ -44,12 +37,14 @@ h3 {
   color: white;
 }
 
-nav{
+nav {
   background-color: #00a2c6;
   padding: 5px;
+  position: sticky;
+  top: 0;
 }
 
-nav a{
+nav a {
   font-size: 18px;
   font-weight: 400;
   text-decoration: none;
@@ -78,7 +73,8 @@ nav ul li {
 }
 
 article{
-  max-width: 70%;
+  float: left;
+  max-width: 75%;
   margin: 0 auto;
 }
 
@@ -104,8 +100,8 @@ section img {
 
 section p {
   padding-top: 20px;
-  min-height: 100px;
-  max-height: 150px;
+  min-height: 150px;
+  max-height: 250px;
   overflow: scroll;
   width: 100%;
   margin: 0 auto;
@@ -176,4 +172,12 @@ footer{
 #content {
   float: left;
   width: 75%;
+  padding-left: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  #content, aside {
+    width: 100%;
+    padding: 0;
+  }
 }
