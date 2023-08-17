@@ -1,3 +1,7 @@
+header{
+  font-size: 20px;
+}
+
 body {
   font-family: "Roboto Mono";
   text-align: center;
@@ -14,6 +18,12 @@ footer {
   background-color: #00a2c6;
 }
 
+nav{
+  background-color: #00a2c6;
+  padding: 2px;
+  position: relative;
+}
+
 nav a{
   font-size: 18px;
   font-weight: 400;
@@ -24,14 +34,15 @@ nav a:hover {
   font-weight: bold;
 }
 
-.profile header {
-  text-align: center;
-}
-
 nav ul li {
   display: inline;
   margin: 20px
 }
+
+.profile header {
+  text-align: center;
+}
+
 
 article{
   max-width: 70%;
@@ -78,14 +89,34 @@ section p {
 
 .info-lambang {
   text-align: center;
-  font-size: 1.2em;
 }
+
 .info-lambang table {
-  margin: auto;
+  margin: 0 auto;
   text-align: left;
 }
+
 .info-lambang table th {
   padding-right: 2em;
+}
+
+.info-lambang table th, td {
+  font-size: 1.2em;
+}
+
+.fot-menu li{
+  display: inline;
+  padding: 3rem;
+  position: relative
+}
+
+.fot-menu a{
+  text-decoration: none;
+  color: #00a2c6
+}
+
+.fot-menu a:hover{
+  font-weight: bold
 }
 
 footer{
