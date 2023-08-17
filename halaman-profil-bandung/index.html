@@ -10,16 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
 
   <body>
-    <header">
+    <header class="jumbotron">
       <h1>Bandung</h1>
       <p>
         Kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi ibu kota provinsi
         tersebut.
       </p>
-
       <nav>
         <ul>
           <li>
@@ -32,6 +34,9 @@
             <a href="#wisata">Wisata</a>
           </li>
           <li>
+            <a href="#makanan">Makanan</a>
+          </li>
+          <li>
             <a href="#logo">Logo</a>
           </li>
         </ul>
@@ -39,11 +44,14 @@
     </header>
     <br>
     <main>
+      <div class="floating-button">
+        <a href="#" style="color: #0288a6; text-decoration: none;"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>      
       <!-- Konten artikel -->
       <div id="content">
         <article id="sejarah">
           <h2>Sejarah</h2>
-          <img src="assets/image/history.jpg" alt="sejarah" />
+          <img src="assets/image/history.jpg" alt="sejarah" class="images" />
           <p>
             Kata Bandung berasal dari kata bendung atau bendungan karena terbendungnya sungai
             Citarum oleh lava Gunung Tangkuban Parahu yang lalu membentuk telaga. Legenda yang
@@ -66,7 +74,7 @@
         <br>
         <article id="geografis">
           <h2>Geografis</h2>
-          <img src="assets/image/geografis.jpg" alt="geografis" />
+          <img src="assets/image/geografis.jpg" alt="geografis" class="images" />
           <p>
             Kota Bandung dikelilingi oleh pegunungan, sehingga bentuk morfologi wilayahnya bagaikan
             sebuah mangkok raksasa,[9] secara geografis kota ini terletak di tengah-tengah provinsi
@@ -95,7 +103,7 @@
           <br>
           <section>
             <h3>Farm House Lembang</h3>
-            <img src="assets/image/farm-house.jpg" alt="farm house" />
+            <img src="assets/image/farm-house.jpg" alt="farm house" class="images" />
             <p>
               Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak
               pernah sepi pengunjung. Selain karena letaknya strategis, kawasan ini juga
@@ -106,7 +114,7 @@
           <br>
           <section>
             <h3>Observatorium Bosscha</h3>
-            <img src="assets/image/bosscha.jpg" alt="bosscha" />
+            <img src="assets/image/bosscha.jpg" alt="bosscha" class="images" />
             <p>
               Memiliki beberapa teleskop, antara lain, Refraktor Ganda Zeiss, Schmidt Bimasakti,
               Refraktor Bamberg, Cassegrain GOTO, dan Teleskop Surya. Refraktor Ganda Zeiss adalah
@@ -117,6 +125,27 @@
               diberikan jadwal hari Selasa sampai Jumat. Sementara itu, kunjungan individu dibuka
               setiap hari Sabtu.
             </p>
+          </section>
+        </article>
+        <br>
+        <article id="makanan">
+          <h2>Makanan</h2>
+          <p>Selain sebagai pusat pariwisata, Bandung juga dikenal dengan kekayaan kuliner yang unik dan lezat. Dua di antaranya yang muncul sebagai perwakilan khas dari kota ini adalah "mochi" dan "peuyeum". Keduanya tidak hanya memanjakan lidah, tetapi juga mengandung cerita sejarah dan nilai budaya yang dalam. Dalam artikel ini, kita akan menjelajahi rasa dan warisan dari makanan khas Bandung ini, mengupas kisah di balik pembuatannya, serta menggali bagaimana kedua hidangan ini menjadi simbol kelezatan dan tradisi yang terus berlanjut dalam gastronomi Jawa Barat.</p>
+          <br>
+          <section>
+            <div class="card">
+              <h3>Peuyeum</h3>
+              <img src="assets/image/peuyeum.png" alt="" class="images">
+            </div>
+            <p>Peuyeum, juga dikenal sebagai tape singkong atau tape ketan, adalah salah satu makanan tradisional khas dari daerah Bandung dan Jawa Barat, Indonesia. Makanan ini dibuat dari bahan dasar singkong atau ketan yang telah melalui proses fermentasi. Proses fermentasi adalah kunci utama dalam pembuatan peuyeum, yang memberikan rasa khas dan tekstur unik pada hidangan ini. <br><br>Proses pembuatan peuyeum dimulai dengan merendam singkong atau ketan dalam air untuk beberapa saat. Setelah itu, bahan tersebut dihancurkan dan dicampur dengan ragi atau serbuk tapai. Campuran ini kemudian dibiarkan untuk mengalami fermentasi selama beberapa hari, tergantung pada tingkat keasaman dan rasa yang diinginkan. Fermentasi ini mengubah karbohidrat dalam singkong atau ketan menjadi asam organik, sehingga memberikan rasa asam dan aroma khas pada peuyeum.</p>
+          </section>
+          <br>
+          <section>
+            <div class="card">
+              <h3>Mochi</h3>
+              <img src="assets/image/mochi.png" alt="" class="images">
+            </div>
+            <p>"Mochi Bandung" atau "Bandung Mochi" adalah variasi lokal dari makanan Jepang yang dikenal sebagai "mochi." Bandung Mochi adalah adaptasi kreatif dari makanan tradisional Jepang ini yang telah diubah sedikit demi sedikit sesuai dengan selera dan bahan lokal di Bandung, Indonesia. <br><br> Mochi pada dasarnya adalah adonan yang terbuat dari tepung ketan yang dikukus atau direbus, kemudian diolah hingga menjadi adonan yang kenyal. Di Jepang, mochi umumnya diisi dengan pasta kacang merah manis atau varian lainnya. Namun, dalam adaptasi di Bandung, mochi sering kali diisi dengan bahan-bahan lokal yang menggabungkan cita rasa manis dan gurih.</p>
           </section>
         </article>
       </div>
