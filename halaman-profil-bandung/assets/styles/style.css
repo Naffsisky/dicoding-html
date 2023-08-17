@@ -172,3 +172,8 @@ footer{
   bottom: 20px;
   right: 20px;
 }
+
+#content {
+  float: left;
+  width: 75%;
+}
