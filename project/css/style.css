@@ -1,0 +1,121 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500;700&family=Quicksand:wght@500;700&family=Roboto+Mono:wght@300;700&display=swap');
+
+body {
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: auto;
+}
+
+.content {
+    float: left;
+    width: 75%;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    background-color: #7EAA92;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #7EAA92;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    background-color: #9ED2BE;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+  
+nav li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+  
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+}
+  
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+  
+    color: white;
+}
+  
+nav a:hover {
+    font-weight: bold;
+    color: #7EAA92;
+    transition: all 0.3s linear;
+}
+
+.opening {
+    text-align: center;
+    margin: 4rem;
+}
+
+.opening img{
+    width: 800px;
+    height: auto;
+    border-radius: 10px
+}
+
+.opening p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 930px) {
+    .opening img{
+        width: 100%;
+        height: auto;
+    }
+    main {
+        width: 100%;
+    }
+}
+
+.article-container {
+    display: flex; /* Mengaktifkan Flexbox */
+    justify-content: space-between; /* Menyeimbangkan konten kiri dan kanan */
+    align-items: flex-start; /* Menyusun konten secara vertikal di atas */
+}
+
+.left-content, .right-content {
+    flex: 1; /* Bagian kiri dan kanan akan mengambil sejumlah ruang yang sama */
+    padding: 20px; /* Tambahkan ruang padding */
+    border: 1px solid #ddd; /* Tambahkan bingkai */
+    border-radius: 5px; /* Sudut melengkung pada bingkai */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    text-align: center;
+}
+
+.left-content {
+    margin-right: 10px; /* Ruang antara bagian kiri dan kanan */
+}
+
+.right-content {
+    margin-left: 10px; /* Ruang antara bagian kanan dan kiri */
+}
+
+aside {
+    float: right;
+    padding-left: 20px;
+    width: 25%;
+}
