@@ -1,121 +1,271 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500;700&family=Quicksand:wght@500;700&family=Roboto+Mono:wght@300;700&display=swap');
 
-body {
+html, body {
     font-family: 'Mulish', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #222529;
 }
 
-main {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    overflow: auto;
-}
-
-.content {
-    float: left;
-    width: 75%;
-}
-
-footer{
-    text-align: center;
-    padding: 20px;
-    color: #fff;
-    background-color: #7EAA92;
-}
-
+/* Header */
 .jumbotron {
     font-size: 20px;
     padding: 60px;
-    background-color: #7EAA92;
+    background-color: #222529;
     text-align: center;
     color: white;
 }
 
+header span {
+    color: #ff0000;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+header p span{
+    color: #086ac8;
+}
+
 nav {
-    background-color: #9ED2BE;
+    background-color: #222c3a;
     padding: 5px;
-    position: sticky;
     top: 0;
 }
   
 nav li {
     list-style-type: none;
     margin-right: 20px;
+    background-color: #086ac8;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #00AFFF;
+}
+
+nav li:hover {
+    background-color: #00AFFF;
 }
   
 nav ul {
     padding-inline: 4rem;
     display: flex;
+    justify-content: center;
 }
   
 nav a {
     font-size: 18px;
     font-weight: 400;
     text-decoration: none;
-  
     color: white;
 }
   
 nav a:hover {
-    font-weight: bold;
-    color: #7EAA92;
     transition: all 0.3s linear;
 }
+/* End Header */
 
-.opening {
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: #222529;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #00AFFF;
+}
+
+/* Main */
+.intro {
+    color: white;
     text-align: center;
-    margin: 4rem;
 }
-
-.opening img{
-    width: 800px;
-    height: auto;
-    border-radius: 10px
+.intro h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ff0000;
 }
-
-.opening p {
+.intro p {
+    max-width: 800px;
+    margin-bottom: 20px;
     text-align: justify;
 }
 
-@media screen and (max-width: 930px) {
-    .opening img{
-        width: 100%;
-        height: auto;
-    }
-    main {
-        width: 100%;
-    }
+.intro .lang {
+    color: white;
+    text-align: left;
+    font-weight: bold;
 }
 
-.article-container {
-    display: flex; /* Mengaktifkan Flexbox */
-    justify-content: space-between; /* Menyeimbangkan konten kiri dan kanan */
-    align-items: flex-start; /* Menyusun konten secara vertikal di atas */
+.tutorial h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ff0000;
 }
 
-.left-content, .right-content {
-    flex: 1; /* Bagian kiri dan kanan akan mengambil sejumlah ruang yang sama */
-    padding: 20px; /* Tambahkan ruang padding */
-    border: 1px solid #ddd; /* Tambahkan bingkai */
-    border-radius: 5px; /* Sudut melengkung pada bingkai */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+.tutorial {
+    color: white;
     text-align: center;
 }
 
-.left-content {
-    margin-right: 10px; /* Ruang antara bagian kiri dan kanan */
+.tutorial p {
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
-.right-content {
-    margin-left: 10px; /* Ruang antara bagian kanan dan kiri */
+.tutorial ol{
+    padding: 0 10rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+/* End Main */
+
+/* Blog */
+aside h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 40px;
+    text-align: center;
+    color: #ff0000;
 }
 
-aside {
-    float: right;
-    padding-left: 20px;
-    width: 25%;
+.blog {
+    padding: 20px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.news {
+    flex: 3;
+    order: 1;
+    margin-right: 20px;
+}
+
+.news section {
+    text-align: justify;
+}
+
+.top-bounty {
+    flex: 1;
+    order: 2;
+}
+
+.top-bounty section {
+    text-align: center;
+}
+
+.top-bounty img {
+    text-align: center;
+    width: 10rem;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.top-bounty h3 {
+    text-align: center;
+    color: #aaa;
+}
+
+.top-bounty table {
+    display: flex;
+    justify-content: center;
+}
+
+.top-bounty span {
+    color: gold;
+    font-weight: bold;
+}
+/* End Blog */
+
+/* Cards */
+.container-empat{
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+.card {
+    border: 0.5px solid blue;
+    border-radius: 10px;
+    background-color: #eee;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+}
+
+.card.besar {
+    transform: scale(1.1);
+}
+
+.card .header {
+    height: 150px;
+    background-color: #666;
+}
+
+.card .content {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    background-color: #222529;
+}
+/* End Footer */
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 0;
+    }
+
+    nav li {
+        margin: 5px;
+    }
+
+    .intro p {
+        max-width: 100%;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .tutorial ol{
+        padding: 0 3rem;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .blog {
+        flex-direction: column;
+    }
+
+    .news {
+        order: 2;
+    }
+
+    .top-bounty {
+        order: 1;
+    }
 }
